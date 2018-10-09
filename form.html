@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+    <form class="form">
+
+       <fieldset>
+            <h2 class="field-title">basic information</h2>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <label for="fiscal year">
+                            Fiscal year
+                        <span class="required"> *</span>
+                    </label>
+                    <div class="form__select-wrapper">
+                        <select name="fiscal year" id="fiscal_year" class="form__inputs" required>
+                            <option value="empty"></option>
+                            <option value="2074-75">2074-75</option>
+                            <option value="2075-76">2075-76</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                        <label for="project status">Project status<span class="required"> *</span></label>
+                    <div class="form__select-wrapper">
+                        <select name="project status" id="project_status" class="form__inputs" required>
+                            <option value="empty"></option>
+                            <option value="Pipeline">Pipeline</option>
+                            <option value="Implementation">Implementation</option>
+                            <option value="Completion">Completion</option>
+                            <option value="Cancelled">Cancelled</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <label for="wards">wards</label>
+                    <input type="text" name="wards" id="wards" class="form__inputs">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <label for="english-title">Title (in English)<span class="required"> *</span></label>
+                    <input type="text" name="english-title" id="english-title" class="form__inputs" required>
+                </div>
+                <div class="col-1-of-2">
+                    <label for="nepali-title">Title (in Nepali) </label>
+                    <input type="text" name="nepali-title" id="nepali-title" class="form__inputs">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-1">
+                    <label for="english-description">Description (in English)</label>
+                    <textarea name="description-english" id="english-description" id="english-description" class="form__inputs"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-1">
+                    <label for="nepali-description">Description (in Nepali)</label>
+                    <textarea name="description-nepali" id="nepali-description" class="form__inputs"></textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="field-title">project target</h2>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <label for="Target Output Quantity">Target Output Quantity</label>
+                    <input type="text" name="Target Output Quantity" id="target_output_quantity" class="form__inputs">
+                </div>
+                <div class="col-1-of-2">
+                    <label for="Target Output Unit">Target Output Unit</label>
+                    <input type="text" name="Target Output Unit" id="target_output_unit" class="form__inputs">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="field-title">Project Budget</h2>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="estimated Cost">Estimated Cost</label>
+                            <input type="text" name="estimated Cost" id="estimated_cost" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Total Agreement Amount">Total Agreement Amount</label>
+                            <input type="text" name="Total Agreement Amount" id="total_agreement_amount" class="form__inputs">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="Agreement Amount (by Municipality)">Agreement Amount (by Municipality)</label>
+                            <input type="text" name="Agreement Amount (by Municipality)" id="agreement_amount_municipality" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Agreement Amount (by User Committee)">Agreement Amount (by User Committee)</label>
+                            <input type="text" name="Agreement Amount (by User Committee)" id="agreement_amount_committee" class="form__inputs">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="source">source</label>
+                            <div class="form__select-wrapper">
+                                <select name="source" id="source" class="form__inputs" required>
+                                        <option value="empty"></option>
+                                        <option value="2074-75">National Government</option>
+                                        <option value="2074-75">Province Government</option>
+                                        <option value="2074-75">local Government</option>
+                                        <option value="2074-75">Loan</option>
+                                        <option value="2074-75">User Group</option>
+                                        <option value="2074-75">Foreign Donors</option>
+                                </select>
+                            </div>
+                    </div>
+            </div>            
+        </fieldset>
+
+        <fieldset>
+            <h2 class="field-title">Date</h2>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="Planned Start Date">Planned Start Date</label>
+                            <input type="text" name="Planned Start Date" id="planned_start_date" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Actual Start Date">Actual Start Date</label>
+                            <input type="text" name="Actual Start Date" id="actual_start_date" class="form__inputs">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="Planned End Date">Planned End Date</label>
+                            <input type="text" name="Planned End Date" id="planned_end_date" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Actual End Date">Actual End Date</label>
+                            <input type="text" name="Actual End Date" id="actual_end_date" class="form__inputs">
+                    </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="field-title">Project Type</h2>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="Type of Project">Type of Project</label>
+                            <div class="form__select-wrapper">
+                                <select name="Type of Project" id="project_type" class="form__inputs" required>
+                                        <option value="empty"></option>
+                                        <option value="2074-75">User Committee</option>
+                                        <option value="2074-75">Tendered</option>                                   
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Tender: Start Date">Tender: Start Date</label>
+                            <input type="text" name="Tender: Start Date" id="tender_start_date" class="form__inputs">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="Tender: End Date">Tender: End Date</label>
+                            <input type="text" name="Tender: End Date" id="tender_end_date" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Number of Bidders">Number of Bidders</label>
+                            <input type="number" name="Number of Bidders" id="number_of_bidders" class="form__inputs" min="0">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1-of-2">
+                            <label for="IFB Number">IFB Number</label>
+                            <input type="text" name="IFB Number" id="ifb_number" class="form__inputs">
+                    </div>
+                    <div class="col-1-of-2">
+                            <label for="Name of Contractor">Name of Contractor</label>
+                            <input type="text" name="Name of Contractor" id="name_of_contractor" class="form__inputs">
+                    </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="row">
+                <div class="col-1-of-1">
+                        <label for="Remark">Remarks</label>
+                        <textarea name="Remarks" id="Remark" class="form__inputs"></textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="field-title">Custom Inputs</h2>
+            <div class="row">
+                <div class="form__input-group">
+                    <input type="checkbox" id="check" class="form__input">
+                    <label for="check" class="form__input-label">
+                        <span class="form__input-button"></span>
+                        custom checkbox
+                    </label>
+                </div>
+                <div class="form__input-group">
+                        <input type="radio" id="radio-btn" class="form__input">
+                        <label for="radio-btn" class="form__input-label">
+                            <span class="form__input-button form__input-button--radio"></span>
+                            custom radio button
+                        </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="form-btn">Add Project</button>
+
+    </form>
+    dsfsd
+    sdf
+    sdf
+
+</body>
+</html>

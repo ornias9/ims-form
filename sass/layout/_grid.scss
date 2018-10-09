@@ -1,0 +1,33 @@
+
+.row {
+    margin-bottom: $gutter-vertical;
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        // background-color: green;                                            //for development/testing purpose
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-1 {
+        width: 100%;
+    }
+
+    .col-1-of-2 {
+        width: calc( ( 100% - #{$gutter-horizontal} ) / 2 );
+       
+    }
+
+    .col-1-of-3 {
+        width: calc( (100% - (2 * #{$gutter-horizontal} ) ) / 3);
+       
+    }
+
+}
+
